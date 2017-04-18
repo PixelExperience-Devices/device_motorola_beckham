@@ -51,5 +51,5 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy-mods/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy-mods/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-mods/vendor
 
-# inherit from the proprietary version
--include vendor/motorola/beckham/BoardConfigVendor.mk
+# Inherit from the proprietary files
+include vendor/motorola/beckham/BoardConfigVendor.mk
