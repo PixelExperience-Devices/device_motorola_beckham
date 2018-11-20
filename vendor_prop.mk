@@ -1,5 +1,5 @@
 #
-# vendor props for evert
+# vendor props for beckham
 #
 
 # Audio

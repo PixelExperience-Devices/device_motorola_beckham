@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Device
-$(call inherit-product, device/motorola/evert/device.mk)
+$(call inherit-product, device/motorola/beckham/device.mk)
 
 # A/B updater
 AB_OTA_UPDATER := true
@@ -61,20 +61,20 @@ PRODUCT_STATIC_BOOT_CONTROL_HAL := \
 
 # TWRP
 ifeq ($(WITH_TWRP),true)
-    $(call inherit-product, device/motorola/evert/twrp/twrp.mk)
+    $(call inherit-product, device/motorola/beckham/twrp/twrp.mk)
 else
     TARGET_RECOVERY_FSTAB := device/motorola/sdm660-common/rootdir/etc/fstab.qcom
 endif
 
 # Device identifiers
-PRODUCT_DEVICE := evert
-PRODUCT_NAME := lineage_evert
+PRODUCT_DEVICE := beckham
+PRODUCT_NAME := lineage_beckham
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := Moto G6 Plus
+PRODUCT_MODEL := Moto Z3 Play
 PRODUCT_MANUFACTURER := Motorola
-PRODUCT_RELEASE_NAME := evert
+PRODUCT_RELEASE_NAME := beckham
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=evert
+    PRODUCT_NAME=beckham
 
-BUILD_FINGERPRINT := motorola/evert/evert:8.0.0/OPW27.113-45/53:user/release-keys
+BUILD_FINGERPRINT := motorola/beckham/beckham:8.1.0/OPWS28.70-56-2/8ad8e:user/release-keys

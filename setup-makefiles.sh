@@ -17,7 +17,7 @@
 
 set -e
 
-export DEVICE=evert
+export DEVICE=beckham
 export DEVICE_COMMON=sdm660-common
 export VENDOR=motorola
 

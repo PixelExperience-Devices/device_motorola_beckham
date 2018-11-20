@@ -17,16 +17,16 @@
 # Inherit from motorola sdm660-common
 -include device/motorola/sdm660-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/motorola/evert
+DEVICE_PATH := device/motorola/beckham
 
 # Assertions
-TARGET_OTA_ASSERT_DEVICE := evert
+TARGET_OTA_ASSERT_DEVICE := beckham
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineageos_evert_defconfig
+TARGET_KERNEL_CONFIG := lineageos_beckham_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/sdm660
 TARGET_KERNEL_CLANG_COMPILE := true
 
@@ -36,7 +36,7 @@ BOARD_NFC_CHIPSET := pn553
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x04000000
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x0AC000000
-BOARD_VENDORIMAGE_PARTITION_SIZE := 956301312
+BOARD_VENDORIMAGE_PARTITION_SIZE := 917504000
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
 
@@ -53,4 +53,4 @@ PRODUCT_SHIPPING_API_LEVEL := 26
 WIFI_DRIVER_OPERSTATE_PATH := "/sys/class/net/wlan0/operstate"
 
 # inherit from the proprietary version
--include vendor/motorola/evert/BoardConfigVendor.mk
+-include vendor/motorola/beckham/BoardConfigVendor.mk
