@@ -7,6 +7,16 @@ etc/acdbdata/Hdmi_cal.acdb:vendor/etc/acdbdata/Hdmi_cal.acdb
 etc/acdbdata/Headset_cal.acdb:vendor/etc/acdbdata/Headset_cal.acdb
 etc/acdbdata/Speaker_cal.acdb:vendor/etc/acdbdata/Speaker_cal.acdb
 
+# Audio - Prebuilt
+vendor/lib/hw/audio.primary.sdm660.so
+vendor/lib/libaudioroute.so
+vendor/lib/libmotaudioutils.so
+vendor/lib/libsensorndkbridge.so
+vendor/lib/libtinyalsa.so
+vendor/lib/libtinycompress.so
+vendor/lib/libtinycompress_vendor.so
+vendor/lib/libunshorten.so
+
 # Audio - Soundfx
 vendor/lib/soundfx/libspeakerbundle.so
 vendor/lib/soundfx/libmmieffectswrapper.so

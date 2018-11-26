@@ -22,6 +22,9 @@ DEVICE_PATH := device/motorola/beckham
 # Assertions
 TARGET_OTA_ASSERT_DEVICE := beckham
 
+# Audio
+TARGET_EXCLUDES_AUDIOFX := true
+
 # Display
 TARGET_SCREEN_DENSITY := 420
 
