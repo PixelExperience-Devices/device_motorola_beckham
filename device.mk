@@ -50,7 +50,8 @@ PRODUCT_COPY_FILES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    init.beckham.rc
+    init.beckham.rc \
+    init.gbmods.sh
 
 # NFC
 PRODUCT_PACKAGES += \

@@ -38,3 +38,20 @@ on property:ro.vendor.hw.dualsim=true
 
 on property:ro.vendor.hw.dualsim=false
     setprop persist.radio.multisim.config ""
+
+on post-fs-data
+    # Start Loading mods kernel modules
+    start vendor.gbmodinstall
+
+service vendor.mods_camd /vendor/bin/mods_camd
+    class late_start
+    user camera
+    group camera system inet input graphics
+    disabled
+    rlimit 14 4 4
+    ioprio rt 4
+
+service vendor.gbmodinstall /vendor/bin/init.gbmods.sh
+    user root
+    oneshot
+    disabled
