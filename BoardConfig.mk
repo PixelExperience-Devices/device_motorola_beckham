@@ -44,7 +44,7 @@ TARGET_HAS_NO_WLAN_STATS := true
 ENABLE_VENDOR_RIL_SERVICE := false
 
 # Treble
-PRODUCT_SHIPPING_API_LEVEL := 26
+PRODUCT_SHIPPING_API_LEVEL := 27
 
 # inherit from the proprietary version
 -include vendor/motorola/beckham/BoardConfigVendor.mk
