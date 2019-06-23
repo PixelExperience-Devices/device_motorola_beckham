@@ -444,6 +444,3 @@ vendor/lib64/sensors.iio.so
 vendor/lib/sensors.iio.so
 vendor/lib64/libiio.so
 vendor/lib/libiio.so
-
-# Thermal
-etc/thermal-engine-beckham.conf:vendor/etc/thermal-engine.conf
