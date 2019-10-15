@@ -53,5 +53,8 @@ PRODUCT_SHIPPING_API_LEVEL := 26
 # Wifi
 WIFI_DRIVER_OPERSTATE_PATH := "/sys/class/net/wlan0/operstate"
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
+
 # inherit from the proprietary version
 -include vendor/motorola/beckham/BoardConfigVendor.mk
