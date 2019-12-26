@@ -43,5 +43,9 @@ TARGET_HAS_NO_WLAN_STATS := true
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := false
 
+# SELinux
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-mods/vendor
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy-mods/private
+
 # inherit from the proprietary version
 -include vendor/motorola/beckham/BoardConfigVendor.mk
