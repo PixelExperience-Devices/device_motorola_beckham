@@ -398,6 +398,19 @@ vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/lib64/com.fingerprints.extension@1.0.so
 
+# Firmware - Display panels
+vendor/firmware/synaptics-smd-s3706b-18020101-298a66-beckham-dvt1a.tdat
+vendor/firmware/synaptics-smd-s3706b-18020101-298a66-beckham-evt.tdat
+vendor/firmware/synaptics-smd-s3706b-18060602-29dc70-beckham.tdat
+vendor/firmware/synaptics-tianma-s3706a-18060801-29dce7-beckham.tdat
+
+# Firmware - DSP
+vendor/firmware/moon-dsp1-ultrasound.bin
+vendor/firmware/moon-dsp1-ultrasound.wmfw
+vendor/firmware/moon-dsp2-aov-frontend.wmfw
+vendor/firmware/moon-dsp2-aov-vrgain.bin
+vendor/firmware/moon-dsp3-aov-control.wmfw
+
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
