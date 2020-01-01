@@ -28,6 +28,9 @@ TARGET_SCREEN_DENSITY := 420
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_beckham_defconfig
 
+# HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/motomods.xml
+
 # NFC
 BOARD_NFC_CHIPSET := pn553
 
