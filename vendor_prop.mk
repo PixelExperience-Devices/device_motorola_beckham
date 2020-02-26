@@ -23,6 +23,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qc.sdk.audio.fluencetype=none \
     ro.vendor.audio.sdk.fluencetype=none
 
+# fastbootd
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.fastbootd.available=true
+
 # Mods
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.mod.platformsdkversion=281
