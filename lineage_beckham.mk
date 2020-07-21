@@ -25,9 +25,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Device
 $(call inherit-product, device/motorola/beckham/device.mk)
 
-# Mods
-$(call inherit-product-if-exists, vendor/motorola/mods/mods-vendor.mk)
-
 # A/B updater
 AB_OTA_UPDATER := true
 

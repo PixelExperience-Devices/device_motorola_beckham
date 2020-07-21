@@ -14,7 +14,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Mods
 PRODUCT_PROPERTY_OVERRIDES += \
-    sys.mod.platformsdkversion=205
+    sys.mod.platformsdkversion=281
 
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
