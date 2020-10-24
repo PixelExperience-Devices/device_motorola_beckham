@@ -15,6 +15,32 @@
 # limitations under the License.
 #
 
+function blob_fixup() {
+    case "${1}" in
+
+        # Load ZAF configs from vendor
+        vendor/lib/libzaf_core.so)
+            sed -i "s|/system/etc/zaf|/vendor/etc/zaf|g" "${2}"
+            ;;
+
+        # Add uhid group for fingerprint service
+        vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc)
+            sed -i "s/input/uhid input/" "${2}"
+            ;;
+
+        # Correct mods gid
+        etc/permissions/com.motorola.mod.xml)
+            sed -i "s|mot_mod|oem_5020|g" "${2}"
+            ;;
+
+        # Replace libcutils with libprocessgroup
+        vendor/lib/hw/audio.primary.sdm660.so)
+            patchelf --replace-needed "libcutils.so" "libprocessgroup.so" "${2}"
+            ;;
+
+    esac
+}
+
 # If we're being sourced by the common script that we called,
 # stop right here. No need to go down the rabbit hole.
 if [ "${BASH_SOURCE[0]}" != "${0}" ]; then
@@ -27,7 +53,6 @@ else
 fi
 
 set -e
-LINEAGE_ROOT="$MY_DIR"/../../..
 
 # Required!
 export DEVICE=beckham
@@ -38,19 +63,3 @@ export DEVICE_BRINGUP_YEAR=2018
 
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
 
-BLOB_ROOT="$LINEAGE_ROOT"/vendor/"${VENDOR}"/"${DEVICE}"/proprietary
-
-# Load ZAF configs from vendor
-ZAF_CORE="$BLOB_ROOT"/vendor/lib/libzaf_core.so
-sed -i "s|/system/etc/zaf|/vendor/etc/zaf|g" "$ZAF_CORE"
-
-# Add uhid group for fingerprint service
-FP_SERVICE_RC="$BLOB_ROOT"/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
-sed -i "s/input/uhid input/" "$FP_SERVICE_RC"
-
-# Correct mods gid
-MOD_PERM="$BLOB_ROOT"/etc/permissions/com.motorola.mod.xml
-sed -i "s|mot_mod|oem_5020|g" "$MOD_PERM"
-
-AUDIO_HAL="$BLOB_ROOT"/vendor/lib/hw/audio.primary.sdm660.so
-patchelf --replace-needed libcutils.so libprocessgroup.so "$AUDIO_HAL"
