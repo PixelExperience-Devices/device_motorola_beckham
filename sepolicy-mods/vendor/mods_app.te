@@ -1,8 +1,8 @@
 allow mods_app ion_device:chr_file { open read };
 allow mods_app self:netlink_kobject_uevent_socket { bind create read setopt };
 
-allow mods_app gbfirmware_file:dir create_dir_perms;
-allow mods_app gbfirmware_file:file create_file_perms;
+allow mods_app greybus_fw_data_file:dir create_dir_perms;
+allow mods_app greybus_fw_data_file:file create_file_perms;
 allow mods_app greybus_raw_device:chr_file open;
 
 allow mods_app audioserver_service:service_manager find;

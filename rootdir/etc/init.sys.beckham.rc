@@ -1,0 +1,3 @@
+on post-fs-data
+    # Greybus firmware directory
+    mkdir /data/gbfirmware 0770 oem_5020 oem_5020
