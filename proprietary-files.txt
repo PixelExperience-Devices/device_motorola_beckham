@@ -480,6 +480,9 @@ vendor/lib64/libmodmanager.so
 # NFC
 vendor/lib64/libpn553_fw.so
 
+# Offline charging
+vendor/bin/charge_only_mode
+
 # Sensors
 vendor/lib/libiio.so
 vendor/lib/sensors.iio.so
