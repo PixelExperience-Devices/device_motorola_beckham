@@ -468,6 +468,7 @@ etc/permissions/com.motorola.mod_v2.xml
 etc/permissions/privapp-permissions-com.motorola.modservice.xml
 etc/permissions/privapp-permissions-com.motorola.projectormod.xml
 etc/sysconfig/hiddenapi-whitelist-com.motorola.modservice.xml
+etc/sysconfig/hiddenapi-whitelist-com.motorola.projectormod.xml
 lib/libmodmanager_system.so
 lib64/libmodmanager_system.so
 lib64/libmodhw.so
