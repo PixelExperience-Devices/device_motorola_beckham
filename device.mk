@@ -46,9 +46,6 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
 
-# Camera
-TARGET_SHIPS_MOTCAMERA := true
-
 # Dex-pre-opt exclusions
 $(call add-product-dex-preopt-module-config,MotoSignatureApp,disable)
 
