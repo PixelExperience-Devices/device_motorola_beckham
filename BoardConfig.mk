@@ -32,6 +32,7 @@ TARGET_SCREEN_DENSITY := 420
 TARGET_KERNEL_CONFIG := lineageos_beckham_defconfig
 
 # HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/adspd.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/motomods.xml
 
 # Partitions
