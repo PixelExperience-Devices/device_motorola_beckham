@@ -16,6 +16,10 @@ function blob_fixup() {
         vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc)
             sed -i "s/input/uhid input/" "${2}"
             ;;
+        # Add input group for adspd service
+        vendor/etc/init/motorola.hardware.audio.adspd@1.0-service.rc)
+            sed -i "s/media/media input/" "${2}"
+            ;;
         # Replace libcutils with libprocessgroup
         vendor/lib/hw/audio.primary.sdm660.so)
             "${PATCHELF}" --replace-needed "libcutils.so" "libprocessgroup.so" "${2}"
