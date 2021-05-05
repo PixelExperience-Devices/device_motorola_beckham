@@ -29,6 +29,7 @@ $(call inherit-product, device/motorola/beckham/device.mk)
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
 # A/B updater
 AB_OTA_UPDATER := true
