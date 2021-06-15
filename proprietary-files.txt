@@ -260,6 +260,10 @@ vendor/lib/libchromatix_s5k2l7sa_snapshot.so
 vendor/lib/libchromatix_s5k2l7sa_video_4k.so
 
 # Camera - mmcamera
+system/lib/libmmcamera_faceproc.so
+system/lib/libmmcamera_faceproc2.so
+system/lib64/libmmcamera_faceproc.so
+system/lib64/libmmcamera_faceproc2.so
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_frame_algorithm.so
