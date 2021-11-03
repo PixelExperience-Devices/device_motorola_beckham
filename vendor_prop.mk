@@ -12,10 +12,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.calfile5=/vendor/etc/acdbdata/Headset_cal.acdb \
     persist.vendor.audio.calfile6=/vendor/etc/acdbdata/Speaker_cal.acdb
 
-# Display
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.latch_unsignaled=0
-
 # Fluence
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.dualmic.config=endfire \
