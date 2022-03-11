@@ -37,6 +37,11 @@ vendor/lib/soundfx/libspeakerbundle.so|180e54e443fc66a0878f481ead326cd5e5c85ce9
 vendor/lib/soundfx/libmmieffectswrapper.so
 
 # Camera
+-system/app/MotoSignatureApp/MotoSignatureApp.apk;PRESIGNED
+system/etc/permissions/com.motorola.motosignature.xml
+system/framework/com.motorola.motosignature.jar
+-system/priv-app/MotCamera2/MotCamera2.apk;PRESIGNED
+system/etc/permissions/privapp-permissions-com.motorola.camera2.xml
 system/etc/zaf/zaf_mot_s5k2l7sa.json:vendor/etc/zaf/zaf_mot_s5k2l7sa.json
 system/etc/zaf/zaf_imx386.json:vendor/etc/zaf/zaf_imx386.json
 system/etc/zaf/zaf_imx386_mono.json:vendor/etc/zaf/zaf_imx386_mono.json
