@@ -1,0 +1,6 @@
+#
+# system props for beckham
+#
+
+#Misc
+debug.force_no_blanking=true
