@@ -51,6 +51,13 @@ function blob_fixup() {
             "${PATCHELF_0_8}" --remove-needed "libhidlbase.so" "${2}"
             sed -i "s/libhidltransport.so/libhidlbase-v32.so\x00/" "${2}"
             ;;
+        # Use VNDK 32 libutils
+        vendor/lib/hw/audio.primary.sdm660.so | vendor/lib/libaudioroute.so | vendor/lib/libmotaudioutils.so | vendor/lib/libsensorndkbridge.so |vendor/lib/libtinyalsa.so | vendor/lib/libtinycompress.so | vendor/lib/libtinycompress_vendor.so |vendor/lib/libunshorten.so)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+            ;;
+        vendor/lib/soundfx/libspeakerbundle.so | vendor/lib/soundfx/libmmieffectswrapper.so | vendor/lib/libeqservicebridge.so | vendor/lib/motorola.hardware.audio.eqservice@1.0_vendor.so)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+            ;;
     esac
 }
 
