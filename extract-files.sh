@@ -38,6 +38,19 @@ function blob_fixup() {
         vendor/lib/libzaf_core.so)
             sed -i "s|/system/etc/zaf|/vendor/etc/zaf|g" "${2}"
             ;;
+        # Use VNDK 32 libhidlbase
+        vendor/lib64/motorola.hardware.audio.adspd@1.0.so)
+            "${PATCHELF_0_8}" --remove-needed "libhidlbase.so" "${2}"
+            sed -i "s/libhidltransport.so/libhidlbase-v32.so\x00/" "${2}"
+            ;;
+        vendor/lib64/com.fingerprints.extension@1.0.so)
+            "${PATCHELF_0_8}" --remove-needed "libhidlbase.so" "${2}"
+            sed -i "s/libhidltransport.so/libhidlbase-v32.so\x00/" "${2}"
+            ;;
+        system/lib64/motorola.hardware.vibrator@1.0.so)
+            "${PATCHELF_0_8}" --remove-needed "libhidlbase.so" "${2}"
+            sed -i "s/libhidltransport.so/libhidlbase-v32.so\x00/" "${2}"
+            ;;
     esac
 }
 
