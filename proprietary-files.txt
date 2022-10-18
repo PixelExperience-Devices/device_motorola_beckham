@@ -609,7 +609,7 @@ vendor/lib64/libmodmanager.so
 vendor/lib64/libpn553_fw.so:vendor/lib/libpn553_fw.so
 
 # Offline charging
-vendor/bin/charge_only_mode
+vendor/bin/charge_only_mode|0ba9713157beb424eef3e9af721374e18c88bd89
 
 # Sensors
 vendor/lib/libiio.so
