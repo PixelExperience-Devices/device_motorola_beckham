@@ -49,11 +49,6 @@ $(call add-product-dex-preopt-module-config,MotoSignatureApp,disable)
 PRODUCT_PACKAGES += \
     fastbootd
 
-# Fingerprint Gestures
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
-    $(LOCAL_PATH)/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-fpc.idc
-
 # Init
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.sys.beckham.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.sys.beckham.rc
