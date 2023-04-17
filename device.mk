@@ -40,7 +40,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Camera
 PRODUCT_PACKAGES += \
-    MotCamera2
+    Aperture
 
 # Dex-pre-opt exclusions
 $(call add-product-dex-preopt-module-config,MotoSignatureApp,disable)
