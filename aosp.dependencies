@@ -2,7 +2,7 @@
   {
     "repository"  : "vendor_motorola_beckham",
     "target_path" : "vendor/motorola/beckham",
-    "branch"      : "thirteen",
+    "branch"      : "thirteen-wip",
     "remote"      : "pixel-devices-blobs"
   },
   {
