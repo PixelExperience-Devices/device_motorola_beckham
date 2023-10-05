@@ -394,8 +394,10 @@ vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 # Camera - Postprocessing
 vendor/lib/libS5k2l7Pdaf.so
 vendor/lib/libS5k2l7PdafCamif.so
-vendor/lib/libdualcameraddm.so
 vendor/lib/libmm-qcamera.so
+
+# Camera - libstdc++ -  Postprocessing
+vendor/lib/libdualcameraddm.so
 vendor/lib64/libdualcameraddm.so
 
 # Display calib
