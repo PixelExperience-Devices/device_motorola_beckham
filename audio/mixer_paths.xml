@@ -280,6 +280,7 @@
 	<ctl name="AFE_PCM_RX Audio Mixer MultiMedia16" value="0" />
 	<ctl name="MultiMedia1 Mixer AFE_PCM_TX" value="0" />
 	<ctl name="AFE_PCM_RX Audio Mixer MultiMedia5" value="0" />
+        <ctl name="MultiMedia10 Mixer USB_AUDIO_TX" value="0" />
 	<!-- usb headset end -->
 	<!-- fm -->
 	<ctl name="PRI MI2S LOOPBACK Volume" value="0" />
@@ -382,6 +383,8 @@
 	<ctl name="MultiMedia8 Mixer SLIM_0_TX" value="0" />
 	<ctl name="MultiMedia8 Mixer SLIM_7_TX" value="0" />
 	<ctl name="MultiMedia8 Mixer AFE_PCM_TX" value="0" />
+        <ctl name="MultiMedia10 Mixer SLIM_0_TX" value="0" />
+        <ctl name="MultiMedia10 Mixer SLIM_7_TX" value="0" />
 	<!-- audio record compress end-->
 	<!-- listen -->
 	<ctl name="LSM1 MUX" value="None" />
@@ -1494,4 +1497,23 @@
 		<path name="mod-headset-mic" />
 		<ctl name="Mods Set Capture Use Case" value="Voice-Rec" />
 	</path>
+
+        <!-- VoIP Tx settings -->
+        <path name="audio-record-voip">
+                <ctl name="MultiMedia10 Mixer SLIM_0_TX" value="1" />
+        </path>
+
+        <path name="audio-record-voip usb-headset-mic">
+                <ctl name="MultiMedia10 Mixer USB_AUDIO_TX" value="1" />
+        </path>
+
+        <path name="audio-record-voip bt-sco">
+                <ctl name="MultiMedia10 Mixer SLIM_7_TX" value="1" />
+        </path>
+
+        <path name="audio-record-voip bt-sco-wb">
+                <ctl name="BT SampleRate" value="KHZ_16" />
+        <path name="audio-record-voip bt-sco" />
+        </path>
+
 </mixer>
