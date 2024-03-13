@@ -11,7 +11,6 @@ system/etc/acdbdata/Speaker_cal.acdb:vendor/etc/acdbdata/Speaker_cal.acdb
 vendor/lib/hw/audio.primary.sdm660.so|974ff23c1084f0b5d87d4571ecdbd6ccd0fce33c
 vendor/lib/libaudioroute.so
 vendor/lib/libmotaudioutils.so
-vendor/lib/libsensorndkbridge.so
 vendor/lib/libtinyalsa.so
 vendor/lib/libtinycompress.so
 vendor/lib/libtinycompress_vendor.so
